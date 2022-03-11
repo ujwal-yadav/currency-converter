@@ -1,0 +1,137 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Varela+Round&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background-color: #0aa3c1;
+  background-image: linear-gradient(315deg, #99dcaf 0%, #1483dd 74%);
+}
+
+::selection{
+  color: #fff;
+  background: #675AFE;
+}
+.main-div{
+  width: 380px;
+  padding: 30px;
+  border-radius: 7px;
+  background-color: #2C2C30;
+  box-shadow: 0 10px 7px  -7px rgba(0,0, 0,0.4);
+  color: aliceblue;
+  font-family: 'Varela Round', sans-serif;
+}
+.main-div header{
+  font-size: 26px;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #ff3a5b 0%, #e4def0 100%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  color: rgb(247, 26, 26);
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.main-div form{
+  margin: 40px 0 20px 0;
+}
+form :where(input, select, button){
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form input{
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  background-color: rgba(137, 137, 137, 0.198);
+  color: rgba(240, 248, 255, 0.486);
+  font-family: 'Outfit', sans-serif;
+}
+form input:focus{
+  padding: 0 14px;
+  
+}
+form .drop-list{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box{
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: rgba(137, 137, 137, 0.198);
+  color: rgba(240, 248, 255, 0.486);
+  
+}
+.select-box img{
+  max-width: 21px;
+}
+.select-box select{
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+  background-color: #3E3E42;
+  color: rgba(240, 248, 255, 0.486);
+}
+.select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+  background: rgb(44, 39, 39);
+}
+.select-box select::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.drop-list .excicon{
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 25px;
+  color: rgb(111, 107, 103);
+  transition: 0.3s ease;
+}
+.drop-list .excicon:hover{
+  color: #fff;
+}
+form .response-text{
+  font-size: 22px;
+  margin: 20px 0 30px;
+  color: lemonchiffon;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 1px;
+}
+form button{
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: 'Outfit', sans-serif;
+  background-color: #FF595C;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+form button:hover{
+  background-color: #ab3c3e;
+}
